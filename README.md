@@ -22,8 +22,8 @@ emberhandlebars: {
   compile: {
     options: {
       templateName: function(sourceFile){
-        var newSource = sourcefile.replace('src/templates/');
-        return newSource.replace('.handlebars');
+        var newSource = sourceFile.replace('src/templates/','');
+        return newSource.replace('.handlebars','');
       }
     },
     files: [
